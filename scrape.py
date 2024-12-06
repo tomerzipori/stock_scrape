@@ -33,8 +33,8 @@ dict_urls = {
     "1159094": ("https://market.tase.co.il/he/market_data/security/1159094/major_data", '//*[@id="mainContent"]/security-lobby/security-major/section[1]/div/div[1]/div/div[1]/div/ul/li[2]/div[1]/div[2]/b'),
     "1159169": ("https://market.tase.co.il/he/market_data/security/1159169/major_data", '//*[@id="mainContent"]/security-lobby/security-major/section[1]/div/div[1]/div/div[1]/div/ul/li[2]/div[1]/div[2]/b'),
     "1143783": ("https://market.tase.co.il/he/market_data/security/1143783/major_data", '//*[@id="mainContent"]/security-lobby/security-major/section[1]/div/div[1]/div/div[1]/div/ul/li[2]/div[1]/div[2]/b'),
-    "5117379": ("https://maya.tase.co.il/fund/5117379", '//*[@id="wrapper"]/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div[4]')
-    #"5113444": ("https://maya.tase.co.il/fund/5113444", '//*[@id="wrapper"]/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div[4]')
+    "5117379": ("https://maya.tase.co.il/fund/5117379", '//*[@id="wrapper"]/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div[4]'),
+    "5113444": ("https://maya.tase.co.il/fund/5113444", '//*[@id="wrapper"]/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div[4]')
 }
 
 prices = {}
@@ -66,7 +66,7 @@ finally:
     driver.quit()
 
 # Save prices to a CSV file
-output_file = "C:/Users/Tomer/האחסון שלי/prices.csv"
+output_file = "prices.csv"
 try:
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
