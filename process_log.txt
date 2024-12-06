@@ -1,0 +1,11 @@
+Process started at Sat Dec  7 01:13:54 JST 2024
+Running Python script...
+1159250 Price: 232,950
+1159094 Price: 30,540
+1159169 Price: 12,660
+1143783 Price: 2,366
+5117379 Price: 109.53 ‡‚í
+5113444 Price: 135.45 ‡‚í
+Prices saved to prices.csv.
+Scraping completed successfully
+Process ended at Sat Dec  7 01:14:07 JST 2024
