@@ -28,6 +28,7 @@ edge_driver_path = "C:/Users/Tomer/Documents/GitHub/stock_scrape/msedgedriver.ex
 service = Service(edge_driver_path)
 driver = webdriver.Edge(service=service, options=edge_options)
 
+# In order to add new stocks, simply add an entry in the form: [stock number]: (stocl_tase_url, xpath_to_stock_price)
 dict_urls = {
     "1159250": ("https://market.tase.co.il/he/market_data/security/1159250/major_data", '//*[@id="mainContent"]/security-lobby/security-major/section[1]/div/div[1]/div/div[1]/div/ul/li[2]/div[1]/div[2]/b'),
     "1159094": ("https://market.tase.co.il/he/market_data/security/1159094/major_data", '//*[@id="mainContent"]/security-lobby/security-major/section[1]/div/div[1]/div/div[1]/div/ul/li[2]/div[1]/div[2]/b'),
