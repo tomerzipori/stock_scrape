@@ -29,7 +29,7 @@ if [ $? -eq 0 ]; then
 	echo "Scraping completed successfully"
 
 	#  Navigate to the repository
-	cd "$REP_DIR" || exit
+	cd "$REPO_DIR" || exit
 
 	# Add the csv file to the staging area
 	git add "$CSV_FILE"
@@ -44,4 +44,3 @@ if [ $? -eq 0 ]; then
 else
 	echo "Scraping script encountered an error. Check the log file ($LOG_FILE) for details."
 fi
-
