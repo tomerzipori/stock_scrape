@@ -6,10 +6,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as ec
 
 # Configure logging
-log_file_path = os.path.expanduser("~/scrape_errors.log")  # Save in the home directory
+log_file_path = os.path.expanduser("C:/Users/Tomer/Documents/GitHub/stock_scrape/process_log.txt")
 logging.basicConfig(
     filename=log_file_path,
     level=logging.ERROR,
@@ -28,7 +28,8 @@ edge_driver_path = "C:/Users/Tomer/Documents/GitHub/stock_scrape/msedgedriver.ex
 service = Service(edge_driver_path)
 driver = webdriver.Edge(service=service, options=edge_options)
 
-# In order to add new stocks, simply add an entry in the form: [stock number]: (stocl_tase_url, xpath_to_stock_price)
+# Dictionary of stock URLs and their price XPaths
+# In order to add new stocks, simply add an entry in the form: [stock number]: (stock_tase_url, xpath_to_stock_price)
 dict_urls = {
     "1159250": ("https://market.tase.co.il/he/market_data/security/1159250/major_data", '//*[@id="mainContent"]/security-lobby/security-major/section[1]/div/div[1]/div/div[1]/div/ul/li[2]/div[1]/div[2]/b'),
     "1159094": ("https://market.tase.co.il/he/market_data/security/1159094/major_data", '//*[@id="mainContent"]/security-lobby/security-major/section[1]/div/div[1]/div/div[1]/div/ul/li[2]/div[1]/div[2]/b'),
@@ -38,6 +39,7 @@ dict_urls = {
     "5113444": ("https://maya.tase.co.il/fund/5113444", '//*[@id="wrapper"]/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div[4]')
 }
 
+# Output dictionary in {stock_number: stock_price} format
 prices = {}
 
 try:
@@ -49,18 +51,17 @@ try:
             # Use explicit wait to locate the element
             xpath = url[1]
             element = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, xpath))
+                ec.presence_of_element_located((By.XPATH, xpath))
             )
 
             # Extract the text
-            data = element.text
-            prices[key] = data
-            print(f"{key} Price:", data)
+            prices[key] = element.text
+            print(f"{key} Price:", element.text)
 
         except Exception as e:
             error_message = f"Error scraping {key}: {e}"
             print(error_message)
-            logging.error(error_message)
+            logging.error(error_message, exc_info=True)
 
 finally:
     # Close the WebDriver
@@ -80,4 +81,4 @@ try:
 except Exception as e:
     error_message = f"Error saving prices to CSV file: {e}"
     print(error_message)
-    logging.error(error_message)
+    logging.error(error_message, exc_info=True)
