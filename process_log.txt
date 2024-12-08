@@ -13,3 +13,19 @@ Error saving prices to CSV file: [Errno 13] Permission denied: 'prices.csv'
 PermissionError: [Errno 13] Permission denied: 'prices.csv'
 Scraping completed successfully
 Process ended at Sun Dec  8 09:05:02 JST 2024
+warning: in the working copy of 'process_log.txt', LF will be replaced by CRLF the next time Git touches it
+[master 861f43e] Updated prices.csv and process log
+ 1 file changed, 15 insertions(+)
+To github.com:tomerzipori/stock_scrape.git
+   e6850f7..861f43e  master -> master
+Process started at Sun Dec  8 09:05:18 JST 2024
+Running Python script...
+1159250 Price: 232,950
+1159094 Price: 30,540
+1159169 Price: 12,660
+1143783 Price: 2,366
+5117379 Price: 109.53 ‡‚í
+5113444 Price: 135.45 ‡‚í
+Prices saved to prices.csv.
+Scraping completed successfully
+Process ended at Sun Dec  8 09:05:32 JST 2024
