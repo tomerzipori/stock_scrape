@@ -45,3 +45,13 @@ Running Python script...
 ./stock_scrape.sh: line 27: C:/Users/Tomer/Documents/GitHub/stock_scrape/.venv/bin/python: No such file or directory
 Scraping script encountered an error. Check the details below:
 Process ended at Tue Dec 10 21:44:35 JST 2024
+warning: in the working copy of 'process_log.txt', LF will be replaced by CRLF the next time Git touches it
+[master 9699533] Updated prices.csv and process log
+ 2 files changed, 16 insertions(+), 6 deletions(-)
+To github.com:tomerzipori/stock_scrape.git
+   e367b13..9699533  master -> master
+Process started at Tue Dec 10 21:46:59 JST 2024
+Running Python script...
+bash: C:/Users/Tomer/Documents/GitHub/stock_scrape/.venv/bin/python: No such file or directory
+Scraping script encountered an error. Check the details below:
+Process ended at Tue Dec 10 21:47:00 JST 2024
