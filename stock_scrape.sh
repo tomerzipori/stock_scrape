@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Set the path to the python script
-PYTHON_SCRIPT="C:\Users\Tomer\Documents\GitHub\stock_scrape\scrape.py"
+PYTHON_SCRIPT="home/tomer/stock_scrape/scrape.py"
 
 # Set the Python interpreter
-PYTHON_INTERPRETER="C:\Users\Tomer\Documents\GitHub\stock_scrape\.venv\Scripts\python.exe"
+PYTHON_INTERPRETER="home/tomer/stock_scrape/.venv/bin/python"
 
 # Log file location
-LOG_FILE="C:\Users\Tomer\Documents\GitHub\stock_scrape\process_log.txt"
+LOG_FILE="home/tomer/stock_scrape/process_log.txt"
 
 # Path to the Git repo
-REPO_DIR="C:\Users\Tomer\Documents\GitHub\stock_scrape"
+REPO_DIR="home/tomer/stock_scrape"
 
 # File to commit
 CSV_FILE="prices.csv"
