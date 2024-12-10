@@ -30,3 +30,8 @@ warning: in the working copy of 'process_log.txt', LF will be replaced by CRLF t
  2 files changed, 21 insertions(+), 5 deletions(-)
 To github.com:tomerzipori/stock_scrape.git
    f122c4d..a18d8c2  master -> master
+Process started at Tue, Dec 10, 2024  9:41:46 PM
+Running Python script...
+C:/Users/Tomer/Documents/GitHub/stock_scrape/stock_scrape.sh: line 27: C:/Users/Tomer/Documents/GitHub/stock_scrape/.venv/bin/python: No such file or directory
+Scraping script encountered an error. Check the details below:
+Process ended at Tue, Dec 10, 2024  9:41:46 PM
