@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="095c1a15-18ea-4cf2-bda4-9203a5e00614" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Driver_Notes/EULA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Driver_Notes/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Driver_Notes/credits.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msedgedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prices.csv" beforeDir="false" afterPath="$PROJECT_DIR$/prices.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/process_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_scrape.sh" beforeDir="false" afterPath="$PROJECT_DIR$/stock_scrape.sh" afterDir="false" />

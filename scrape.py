@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 # Configure logging
-log_file_path = os.path.expanduser("~/stock_scrape/process_log.txt")
+log_file_path = os.path.expanduser("C:/Users/Tomer/Documents/GitHub/stock_scrape/process_log.txt")
 logging.basicConfig(
     filename=log_file_path,
     level=logging.ERROR,
@@ -24,7 +24,7 @@ edge_options.add_argument('--disable-gpu')
 edge_options.add_argument('--no-sandbox')
 
 # Path to your EdgeDriver executable
-edge_driver_path = "~/stock_scrape/msedgedriver"
+edge_driver_path = "C:/Users/Tomer/Documents/GitHub/stock_scrape/msedgedriver.exe"
 
 service = Service(edge_driver_path)
 driver = webdriver.Edge(service=service, options=edge_options)
@@ -69,7 +69,7 @@ finally:
     driver.quit()
 
 # Save prices to a CSV file
-output_file = "~/stock_scrape/prices.csv"
+output_file = "C:/Users/Tomer/Documents/GitHub/stock_scrape/prices.csv"
 try:
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
