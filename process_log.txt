@@ -971,3 +971,19 @@ Running Python script...
 Prices saved to C:/Users/Tomer/Documents/GitHub/stock_scrape/prices.csv.
 Scraping completed successfully
 Process ended at Wed, Dec 18, 2024  2:22:39 PM
+warning: in the working copy of 'process_log.txt', LF will be replaced by CRLF the next time Git touches it
+[master 338e81c] Updated prices.csv and process log
+ 2 files changed, 20 insertions(+), 4 deletions(-)
+To github.com:tomerzipori/stock_scrape.git
+   e555b02..338e81c  master -> master
+Process started at Fri, Dec 20, 2024  9:17:08 AM
+Running Python script...
+1159250 Price: 227,490
+1159094 Price: 29,600
+1159169 Price: 12,530
+1143783 Price: 2,381
+5117379 Price: ‡‚í
+5113444 Price: 136.18 ‡‚í
+Prices saved to C:/Users/Tomer/Documents/GitHub/stock_scrape/prices.csv.
+Scraping completed successfully
+Process ended at Fri, Dec 20, 2024  9:17:25 AM
