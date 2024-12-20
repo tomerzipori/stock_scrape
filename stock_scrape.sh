@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# Set the path to the python script
-PYTHON_SCRIPT="C:/Users/Tomer/Documents/GitHub/stock_scrape/scrape.py"
+# Set the path to the Python script
+PYTHON_SCRIPT="/app/scrape.py"
 
 # Set the Python interpreter
-PYTHON_INTERPRETER="C:/Users/Tomer/Documents/GitHub/stock_scrape/.venv/bin/python"
+PYTHON_INTERPRETER="python"
 
 # Log file location
-LOG_FILE="C:/Users/Tomer/Documents/GitHub/stock_scrape/process_log.txt"
+LOG_FILE="/app/process_log.txt"
 
 # Path to the Git repo
-REPO_DIR="C:/Users/Tomer/Documents/GitHub/stock_scrape"
+REPO_DIR="/app"
 
 # File to commit
-CSV_FILE="C:/Users/Tomer/Documents/GitHub/stock_scrape/prices.csv"
+CSV_FILE="/app/prices.csv"
 
 # Git branch
 BRANCH="master"
