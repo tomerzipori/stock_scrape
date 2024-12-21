@@ -58,7 +58,7 @@ try:
 
             # Use explicit wait to locate the element
             xpath = url[1]
-            element = WebDriverWait(driver, 30).until(
+            element = WebDriverWait(driver, 120).until(
                 ec.presence_of_element_located((By.XPATH, xpath))
             )
 
