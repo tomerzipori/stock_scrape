@@ -40,6 +40,9 @@ fi
 # End the log file with a timestamp
 echo "Process ended at $(date)" >> "$LOG_FILE"
 
+# Pull latest changes from remote before pushing
+git pull --rebase origin master >> "$LOG_FILE" 2>&1
+
 # Commit and push changes to GitHub
 git add "$CSV_FILE" "$LOG_FILE"
 git commit -m "Updated prices.csv and process log"
